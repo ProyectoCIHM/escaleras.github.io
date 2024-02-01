@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- /*
+* Página Principal de CIHM 
+* @author: Figueroa Chávez Aimee Amairani 
+* @author: López Quijano Luis Aldo  
+* @since: Enero  2024*/  -->
+
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../assets/"
+    data-template="vertical-menu-template-free">
+
+<head>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Coordinación Instalaciones Hidráulicas y Mecánicas</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+    <link rel="stylesheet" href="../assets/css/complemento.css" <!-- Vendors CSS -->
+    <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <link rel="stylesheet" href="../assets/vendor/libs/apex-charts/apex-charts.css" />
+
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/config.js"></script>
+</head>
+
+<body>
+
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <form id="formEscalera" method="POST" name="form_escalera">
+                <label for="linea" class="form-label m-1">Línea</label>
+                <input type="text" class="form-control m-1" id="linea" name="linea" placeholder="">
+
+                <label for="nom_estacion" class="form-label m-1">Estación</label>
+                <input type="text" class="form-control m-1" id="nom_estacion" name="nom_estacion "placeholder="">
+
+                <label for="num_equipo" class="form-label m-1">N° de Equipo</label>
+                <input type="text" class="form-control m-1" id="num_equipo" name="num_equipo" placeholder="">
+
+                <label for="marca" class="form-label m-1">Marca </label>
+                <input type="text" class="form-control m-1" id="marca" name="marca" placeholder="">
+
+                <label for="modelo" class="form-label m-1">Modelo</label>
+                <input type="text" class="form-control m-1" id="modelo"  name= "modelo" placeholder="">
+
+                <label for="altura" class="form-label m-1">Altura </label>
+                <input type="text" class="form-control m-1" id="altura" name="altura" placeholder="">
+
+                <label for="sentido" class="form-label m-1">Sentido</label>
+                <input type="text" class="form-control m-1" id="sentido"  name="sentido"placeholder="">
+
+                <label for="desnivel" class="form-label m-1">Desnivel</label>
+                <input type="text" class="form-control m-1" id="desnivel"  name="desnivel" placeholder="">
+        </div>
+
+        <div class="col-md-3">
+            <label for="velocidad" class="form-label m-1">Velocidad </label>
+            <input type="text" class="form-control m-1" id="velocidad"  name="velocidad" placeholder="">
+
+            <label for="inclinacion" class="form-label m-1">Inclinación</label>
+            <input type="text" class="form-control m-1" id="inclinacion" name="inclinacion"placeholder="">
+
+            <label for="balaustrada" class="form-label m-0">Balaustrada</label>
+            <input type="text" class="form-control m-1" id="balaustrada"  name="balaustrada"placeholder="">
+
+            <label for="num_anterior" class="form-label m-1">N° de Anterior</label>
+            <input type="text" class="form-control m-1" id="num_anterior" name="num_anterior"placeholder="">
+
+            <label for="num_inventario" class="form-label m-1">Número de Inventario</label>
+            <input type="text" class="form-control m-1" id="num_inventario" name="num_inventario" placeholder="">
+
+            <label for="año" class="form-label m-1">Año</label>
+            <input type="text" class="form-control m-1" id="año" name="año"placeholder="">
+
+            <label for="antiguedad" class="form-label m-1">Antigüedad</label>
+            <input type="text" class="form-control m-1" id="antiguedad" name="antiguedad"placeholder="">
+
+            <label for="c_mantenimiento" class="form-label m-1">Compañia de Mantenimento</label>
+            <input type="text" class="form-control m-1" id="c_mantenimiento" name=" c_mantenimiento" placeholder="">
+        </div>
+
+        <div class="col-md-3">
+            <label for="proteccion" class="form-label m-1">Protección</label>
+            <input type="text" class="form-control m-1" id="proteccion" name="proteccion" placeholder="">
+
+            <label for="alimentacion" class="form-label m-1">Alimentación</label>
+            <input type="text" class="form-control m-1" id="alimentacion" name="aliemntacion"placeholder="">
+
+            <label for="c_plena_carga" class="form-label m-1">Corriente a plena Carga</label>
+            <input type="text" class="form-control m-1" id="c_plena_carga" name=" c_plena_carga" placeholder="">
+
+            <label for="c_arranque" class="form-label m-1">Corriente de arranque</label>
+            <input type="text" class="form-control m-1" id="c_arranque" name="c_arranque"placeholder="">
+
+            <label for="nom_contrato" class="form-label m-1">Nombre del Contrato</label>
+            <input type="text" class="form-control m-1" id="nom_contrato" name="nom_contrato "placeholder="">
+
+            <label for="potencia_motor" class="form-label m-1">Potencia del motor</label>
+            <input type="text" class="form-control m-1" id="potencia_motor" name="potencia_motor"placeholder="">
+
+            <label for="num_contrato" class="form-label m-1">Número de Contrato</label>
+            <input type="text" class="form-control m-1" id="num_contrato" name="num_contrato" placeholder="">
+        </div>
+        </form>
+
+        <div class="col-md-3" style="margin-top:525px;">
+            <button type="button" class="btn btn-primary btn-sm m-1" onclick="enviar_formEsca()">Agregar</button>
+            <button type="button" class="btn btn-secondary btn-sm m-1">Regresar</button>
+        </div>
+    </div>
+
+    <script>
+        function enviar_formEsca() {
+            var url = "/prueba/EM/controlador/Controlador.php"; //dirección url del archivo que ejecuta datos
+            //console.log('entre');
+            variables = $('#formEscalera').serialize();
+            console.log(variables);
+            $.ajax({
+                data: { variables: variables },
+                dataType: "json",
+                url: url,
+                type: "post",
+                success: resulta,
+                error: function (xhr, ajaxoptions, throwerror) {
+                    console.log(xhr.status);
+                    console.log(throwerror);
+
+                }
+            });
+
+        }
+
+        function resulta(datos, textStatus, jq_XHR) {
+            console.log("entre a result");
+            console.log(datos);
+            $("#contenedor_secundario").append(datos);
+            $("#contenedor_principal").remove();
+
+        }
+    </script>
